@@ -1,0 +1,21 @@
+<div class="chat-content">
+    <div class="chat-header">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back" routerLink="/home"></mat-icon>
+        <span>YouCan Chat</span>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="more_vert"></mat-icon>
+    </div>
+    <div class="chat-body">
+        <div *ngFor="let message of messages" class="{{ message.type }}">
+            {{ message.message }}
+        </div>
+    </div>
+    <div class="chat-footer">
+        <div class="publisher bt-1 border-light">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="sentiment_satisfied"></mat-icon>
+            <input class="publisher-input" type="text" placeholder="Escribe algo" [(ngModel)]="message">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="mic"></mat-icon>
+            <a class="publisher-btn" href="#" data-abc="true"><i class="fa fa-smile"></i></a>
+            <a class="publisher-btn text-info" href="#" data-abc="true" (click)="sendMessage($event)"><i class="fa fa-paper-plane"></i></a>
+          </div>
+    </div>
+</div>

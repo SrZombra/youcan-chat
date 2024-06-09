@@ -1,0 +1,19 @@
+<div>
+    <div class="welcome-header">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back"></mat-icon>
+        <span>YouCan Chat</span>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="more_vert"></mat-icon>
+    </div>
+    <div class="welcome-content">
+        <h1>Bienvenid&#64; Ingrid</h1>
+        <div class="welcome-gif">
+            <img src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o=" alt="">
+        </div>
+        <div class="welcome-p">
+            <p>¿Que quieres hacer hoy?</p>
+            <button class="green-button" (click)="register($event)">Ir a los módulos</button>
+            <button class="white-button">Ayuda</button>
+        </div>
+    </div>
+</div>
+<app-loading *ngIf="loading"></app-loading>

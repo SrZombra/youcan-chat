@@ -1,0 +1,36 @@
+.welcome-header {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.welcome-gif {
+    width: 100%;
+    text-align: center;
+}
+
+.welcome-gif img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.welcome-content {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.welcome-p {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}

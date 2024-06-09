@@ -1,0 +1,35 @@
+<div class="background-div">
+    <div class="title">
+        <h1>YouCan Chat</h1>
+    </div>
+    <div class="overlay-div">
+        <form [formGroup]="formRegister">
+            <div class="input-container">
+                <input type="text" placeholder="Nombre completo" formControlName="fullname">
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Correo eléctronico" formControlName="email">
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Número celular" formControlName="phone">
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Tipo de discapacidad" formControlName="disc_type">
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Rol" formControlName="rol">
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Contraseña" formControlName="password">
+            </div>
+            <div class="input-container">
+                <input type="text" placeholder="Confirmar contraseña" formControlName="confirm_password">
+            </div>
+            <button class="green-button" (click)="register($event)" [disabled]="!formRegister.valid">Iniciar sesión</button>
+            <div class="href">
+                <a href="" routerLink="/">Volver</a>
+            </div>
+        </form>
+    </div>
+</div>
+<app-loading *ngIf="loading"></app-loading>

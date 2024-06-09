@@ -1,0 +1,77 @@
+<div>
+    <div class="home-header">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back"></mat-icon>
+        <span>YouCan Chat</span>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="more_vert"></mat-icon>
+    </div>
+    <div class="home-content">
+        <h2>Modúlos</h2>
+        <div class="modules">
+            <div class="item">
+                <div class="item-image">
+                    <img src="assets/img/recomendaciones.png" alt="">
+                </div>
+                <div class="item-content">
+                    <div style="height: 50px;"></div>
+                    <div class="item-text">
+                        <p class="title">RECOMENDACIONES</p>
+                        <p class="body">Revisa consejos, recomendaciones, entre otros temas junto con los mejores especialistas.</p>
+                    </div>
+                    <div>
+                        <button class="white-button">Continuar</button>
+                    </div>
+                    <div style="height: 10px;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="assets/img/consultas.png" alt="">
+                </div>
+                <div class="item-content">
+                    <div style="height: 50px;"></div>
+                    <div class="item-text">
+                        <p class="title">CONSULTAS</p>
+                        <p class="body">Obten información a la mano sobre los temas mas relevantes </p>
+                    </div>
+                    <div>
+                        <button class="white-button">Continuar</button>
+                    </div>
+                    <div style="height: 10px;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="assets/img/ayudamedica.png" alt="">
+                </div>
+                <div class="item-content">
+                    <div style="height: 50px;"></div>
+                    <div class="item-text">
+                        <p class="body">Gestiona temas medicos junto con los mejores especialistas las 24 horas.</p>
+                        <p class="title">AYUDA MÉDICA</p>
+                    </div>
+                    <div>
+                        <button class="white-button">Continuar</button>
+                    </div>
+                    <div style="height: 10px;"></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-image">
+                    <img src="assets/img/chatvirtual.png" alt="">
+                </div>
+                <div class="item-content">
+                    <div style="height: 50px;"></div>
+                    <div class="item-text">
+                        <p class="body">¡Manten comunicación constante con nuestro equipo e interactua con chat bot!</p>
+                        <p class="title">CHAT VIRTUAL</p>
+                    </div>
+                    <div>
+                        <button class="white-button" (click)="register($event)">Continuar</button>
+                    </div>
+                    <div style="height: 10px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-loading *ngIf="loading"></app-loading>
